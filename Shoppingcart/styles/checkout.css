@@ -1,0 +1,254 @@
+*{
+    padding: 0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+html {
+  --top-spacing: 60px;
+  // scroll-padding-top: var(--top-spacing);
+}
+
+body {
+  // ULTIMATELY this needs to go on <html>, not <body>. 
+  scroll-padding-top: var(--top-spacing);
+  
+  margin: var(--top-spacing) auto;
+  background-color:#0B8DC1;    
+
+ 
+  
+}
+
+/*TOP CAPTION BAR Contains heading*/
+.captionbar{
+    background-color:#033669;
+    height:50px;
+    color: white;
+    overflow: hidden;
+    top:0px;
+    width: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    position: fixed;
+    z-index: 1;
+  
+}
+.navverbtn{
+    margin-left:10px;
+    font-size: 16px;
+    font-weight: bold;
+    display:inline;
+}
+.overlay {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6);
+    overflow-x: hidden;
+    transition: 0.7s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 20%;    
+    margin-top: 30px;
+    
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;    
+    font-size: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+   
+    }
+  }
+
+.searchcls{
+    width:375px;
+    height:25px;
+    display: inline;
+    border-radius: 5px #2952ad;
+
+}
+.searchbtn{
+    display: inline;
+    background-color: orange;
+    font-size: 15px;
+    margin-left:5px;
+    height: 25px;
+    width: 40px;
+   
+}
+nav{
+  margin-left: 10px;
+
+}
+nav ul  {
+   list-style-type: none;
+   right:35px;
+   position: absolute;
+   top: 15px;
+   overflow-y: hidden;
+}
+nav ul li {
+    display: inline;
+   
+}
+nav ul li a{
+  text-decoration: none;
+  margin: 2px;
+  padding: 2px;
+  border-right: 2px solid green;
+ 
+   padding-left: 6px;;
+   font-size: 18px;
+   color: white;
+}
+nav ul li a:hover{
+    color: hotpink;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  background-color: gray;
+  top:800px;
+  width:100%; 
+  color: black;
+  height:60px;
+  }
+  .backtotop{
+    position: static;
+    font-weight: bold;
+    background-color: #124578;
+    width:100%;
+    text-align: center;
+    height:20px; 
+  }
+  .backtotop a{
+    color: white;
+    text-decoration: none;
+  }
+  footer small{ 
+    line-height: 10px;
+    vertical-align: text-bottom;  
+  }
+  
+  footer .middletext{
+    text-align :center;
+    flex-direction: column;
+    overflow : hidden;
+  }
+  
+  footer .middletext small{
+    border-right:2px solid black;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: aliceblue;
+  }
+  
+  footer .socialmediaicons{
+    overflow: hidden;
+    text-align: right;
+    margin-right: 15px;
+  }
+  footer .socialmediaicons a{
+    text-decoration: none;
+    color: #2952ad;
+    width:30px;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  
+  
+  
+  /* Login Page Popup*/
+  .popup{
+    background-color: rgb(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    position: absolute;
+    
+    top:-30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .popup-content{
+    background-color:  #033669;
+    color:white;
+    width: 500px;
+    height:280px;
+    position: relative;
+    border-radius: 10px;    
+  }
+  
+  .popup  label{
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+   
+    margin:2px auto;
+  }
+  .popup  input{
+    margin:5px auto;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    border-color: darkblue;
+    width:300px;
+    height:25px;
+  } 
+  .popup  button{
+    margin:10px auto;
+    margin-bottom: 1px;
+    display: block;
+    border-color: dodgerblue;
+    background-color: darkblue;
+    width:150px;
+    height:30px;
+    color: white;
+  } 
+  .popupclose {
+    position: absolute;
+    top: -15px;  
+    right:  -15px;
+    text-decoration: cornsilk;
+    font-size: 16px;
+    background-color: #033669 ;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+  }
+
